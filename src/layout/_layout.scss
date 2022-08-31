@@ -1,0 +1,300 @@
+.layout {
+	font-family: beasite;
+	max-width: 1500px;
+	background: #ecedf0;
+	padding-top: 6px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	min-height: 100vh;
+	.app_navbar {
+		background: #ecedf0;
+		margin-top: 6px;
+		margin-bottom: 10px;
+		height: 41px;
+		@include heart;
+		justify-content: space-between;
+		.logo {
+			background-image: url("./../asset/images/logo.svg");
+			background-size: contain;
+			@include img_heart;
+			height: 40px;
+			width: 45px;
+		}
+		.user_data {
+			.item {
+				@include heart;
+				padding: 4px 7px;
+				transition-duration: 0.3s;
+				&:hover {
+					background: #cacfd7;
+				}
+				.icon {
+					height: 23px;
+					width: 17px;
+					background-image: url("./../asset/images/msg.svg");
+					@include img_heart;
+				}
+				justify-content: space-between;
+				border-radius: 100px;
+				gap: 7px;
+				.text {
+					font-size: 12px;
+				}
+			}
+			.msg {
+				background: #dee1e6;
+			}
+			gap: 10px;
+			justify-content: space-between;
+			.user {
+				gap: 10px;
+				.icon1 {
+					@include img_heart;
+					height: 15px;
+					width: 13px;
+					background-image: url("./../asset/images/user.svg");
+				}
+				.icon2 {
+					width: 16px;
+					background-image: url("./../asset/images/arrow.svg");
+					@include img_heart;
+				}
+			}
+		}
+		.project_nav {
+			height: 100%;
+			.first_side {
+				flex: 1.5;
+				.backbutton {
+					width: 19px;
+					@include img_heart;
+					height: 16px;
+					background-image: url("./../asset/images/left_arrow.svg");
+					margin-left: 40px;
+				}
+				.icon_button {
+					@include heart;
+					gap: 10px;
+					margin-right: auto;
+					.icon_folder {
+						width: 18.6px;
+						height: 18.6px;
+						margin-top: -4px;
+						background-image: url("./../asset/images/black_folder.svg");
+					}
+					.text_folder {
+						font-family: beausite_medium;
+						color: black;
+						font-size: 16px;
+					}
+					.arrow_icon {
+						width: 23px;
+						height: 23px;
+						background-image: url("./../asset/images/arrow.svg");
+						margin-bottom: -4px;
+					}
+				}
+			}
+			.second_side {
+				flex: 2.2;
+				justify-content: space-between;
+				.icon2 {
+					height: 24.6px !important;
+					width: 24.6px !important;
+					background-image: url("./../asset/images/three-dots.svg") !important;
+					opacity: 0;
+					transition-duration: 0.3s;
+					background-color: transparent !important;
+					border: none !important;
+					border-radius: 13px;
+					padding: 0px !important;
+				}
+
+				.buttons {
+					gap: 10px;
+					div {
+						font-size: 12.3px;
+						padding: 5px 14px 7px 14px;
+						border-radius: 30px;
+						border-color: #cacfd7 !important;
+						color: #000000a4;
+					}
+					.active {
+						background: #717274;
+						color: white;
+					}
+				}
+				.round-btn {
+					height: 24.6px !important;
+					width: 26.6px !important;
+					background-image: url("./../asset/images/three-dots.svg") !important;
+					border: none !important;
+					border-radius: 13px;
+					@include img_heart;
+				}
+			}
+		}
+	}
+	.layout_container {
+		background: #ffffff;
+		min-height: 100vh;
+		border-radius: 12px 12px 0px 0px;
+		overflow: hidden;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 700px) {
+	.layout {
+		font-family: beasite;
+		max-width: 1500px;
+		background: #ecedf0;
+		padding-top: 6px;
+		padding-left: 14px;
+		padding-right: 14px;
+		padding-bottom: 40px;
+		min-height: 100vh;
+		.app_navbar {
+			background: #ecedf0;
+			margin-top: 6px;
+			margin-bottom: 10px;
+			height: 41px;
+			@include heart;
+			justify-content: space-between;
+			.logo {
+				background-image: url("./../asset/images/logo.svg");
+				background-size: contain;
+				@include img_heart;
+				height: 32px !important;
+				width: 35px !important;
+			}
+			.user_data {
+				.item {
+					@include heart;
+					padding: 4px 7px;
+					transition-duration: 0.3s;
+					&:hover {
+						background: #cacfd7;
+					}
+					.icon {
+						height: 23px;
+						width: 17px;
+						background-image: url("./../asset/images/msg.svg");
+						@include img_heart;
+					}
+					justify-content: space-between;
+					border-radius: 100px;
+					gap: 5px;
+					.text {
+						font-size: 12px;
+					}
+				}
+				.msg {
+					background: #dee1e6;
+				}
+				gap: 10px;
+				justify-content: space-between;
+				.user {
+					gap: 10px;
+					.icon1 {
+						@include img_heart;
+						height: 15px;
+						width: 13px;
+						background-image: url("./../asset/images/user.svg");
+					}
+					.icon2 {
+						width: 16px;
+						background-image: url("./../asset/images/arrow.svg");
+						@include img_heart;
+					}
+				}
+			}
+			.project_nav {
+				height: 100%;
+				.first_side {
+					flex: 1.5;
+					.backbutton {
+						width: 16px;
+						height: 13px;
+						@include img_heart;
+						background-image: url("./../asset/images/left_arrow.svg");
+						margin-left: 5px;
+					}
+					.icon_button {
+						@include heart;
+						gap: 10px;
+						margin-right: auto;
+						.icon_folder {
+							width: 18.6px;
+							height: 18.6px;
+							margin-top: -4px;
+							background-image: url("./../asset/images/black_folder.svg");
+						}
+						.text_folder {
+							font-family: beausite_medium;
+							color: black;
+							font-size: 13px;
+							max-width: 70px;
+						}
+						.arrow_icon {
+							width: 17px;
+							height: 17px;
+							@include img-heart;
+							background-image: url("./../asset/images/arrow.svg");
+							margin-bottom: 0px;
+							margin-left: -8px !important;
+						}
+					}
+				}
+				.second_side {
+					flex: 2.2;
+					justify-content: space-between;
+					.icon2 {
+						height: 24.6px !important;
+						width: 24.6px !important;
+						background-image: url("./../asset/images/three-dots.svg") !important;
+						opacity: 0;
+						transition-duration: 0.3s;
+						background-color: transparent !important;
+						border: none !important;
+						border-radius: 13px;
+						padding: 0px !important;
+					}
+
+					.buttons {
+						gap: 3px;
+						margin-left: auto;
+						div {
+							font-size: 11.3px;
+							padding: 4px 5px;
+							border-radius: 30px;
+							border-color: #cacfd7 !important;
+							color: #000000a4;
+							margin-right: 7px;
+						}
+						.active {
+							background: #717274;
+							color: white;
+						}
+					}
+					.round-btn {
+						height: 26px !important;
+						width: 26.6px !important;
+						background-image: url("./../asset/images/three-dots.svg") !important;
+						border: none !important;
+						border-radius: 13px;
+						@include img_heart;
+					}
+				}
+			}
+		}
+		.layout_container {
+			background: #ffffff;
+			min-height: 100vh;
+			border-radius: 12px 12px 0px 0px;
+			overflow: hidden;
+			padding-bottom: 50px;
+		}
+	}
+}

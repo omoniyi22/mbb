@@ -1,0 +1,217 @@
+.project_upload_box {
+	width: 96%;
+	max-width: 1130px;
+	.top_box {
+		margin-top: 24px;
+		.back_icon {
+			background-image: url("./../../asset/images/left_arrow.svg");
+			width: 20px;
+			height: 17px;
+			margin-right: 10px;
+		}
+		.file_text {
+		}
+	}
+
+	.project_upload_body {
+		margin-top: 30px;
+		max-width: 505px;
+		.big_title {
+			font-size: 22px;
+			color: black;
+			font-family: beausite_bold;
+		}
+		.upload_body {
+			margin-top: 35px;
+			background: #f9f9fa;
+			padding: 17px 24px;
+			border-radius: 10px;
+			.flexIt {
+				display: flex;
+				margin-bottom: 12px;
+				@include heart;
+				.small_title {
+					font-size: 13.7px;
+					font-family: beausite_medium;
+					color: black;
+				}
+				.small_text {
+					font-size: 13px;
+					opacity: 0.9;
+					font-family: beausite_medium;
+				}
+				.small_icon {
+					background-image: url("./../../asset/images/question.svg");
+					width: 18px;
+					height: 18px;
+					@include img_heart;
+					margin-left: 10px;
+				}
+			}
+			#file-input {
+				display: none;
+			}
+			.upload_box {
+				@include heart;
+				padding: 14px !important;
+				margin-bottom: 5px !important;
+				margin-top: 9px !important;
+				border: 1.5px dashed #cfd3da !important;
+				border-radius: 8px;
+				width: 100% !important;
+				.icon {
+					background-image: url("./../../asset/images/upload.svg");
+					width: 19px;
+					height: 21px;
+					@include img_heart;
+					margin-left: 12px;
+					margin-right: 12px;
+				}
+				.text {
+					font-size: 13px;
+					color: #646c7d;
+				}
+			}
+			.uploaded {
+				background: #ecedf0;
+				border: 1.5px solid #ecedf0 !important;
+				padding-left: 6px;
+				padding-right: 6px;
+				.icon1 {
+					background-image: url("./../../asset/images/upload.svg");
+				}
+				.text {
+					margin-right: auto;
+					color: black;
+				}
+				.icon2 {
+					background-image: url("./../../asset/images/delete.svg");
+				}
+			}
+		}
+
+		.bttn {
+			margin-top: 20px;
+			margin-left: auto;
+			width: fit-content;
+			font-size: 13.3px;
+			background: #cfd3da;
+			color: white;
+			padding: 10.5px 17px;
+			border-radius: 100px;
+		}
+		.bttn.active {
+			background: #242936 !important;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.project_upload_box {
+		width: 90%;
+		max-width: 1130px;
+		.top_box {
+			margin-top: 24px;
+			.back_icon {
+				background-image: url("./../../asset/images/left_arrow.svg");
+				width: 20px;
+				height: 17px;
+				margin-right: 10px;
+			}
+			.file_text {
+			}
+		}
+
+		.project_upload_body {
+			margin-top: 30px;
+			max-width: 505px;
+			.big_title {
+				font-size: 22px;
+				color: black;
+				font-family: beausite_bold;
+			}
+			.upload_body {
+				margin-top: 35px;
+				background: #ecedf0c5;
+				padding: 14px 18px;
+				border-radius: 10px;
+				.flexIt {
+					display: flex;
+					margin-bottom: 12px;
+					@include heart;
+					.small_title {
+						font-size: 13px;
+						font-family: beausite_medium;
+						color: black;
+					}
+					.small_text {
+						font-size: 12.6px;
+						opacity: 0.9;
+						font-family: beausite_medium;
+					}
+					.small_icon {
+						background-image: url("./../../asset/images/question.svg");
+						width: 15px;
+						height: 15px;
+						@include img_heart;
+						margin-left: 5px;
+					}
+				}
+				#file-input {
+					display: none;
+				}
+				.upload_box {
+					@include heart;
+					padding: 14px !important;
+					margin-bottom: 5px !important;
+					margin-top: 9px !important;
+					border: 1.5px dashed #b6bac1 !important;
+					border-radius: 8px;
+					width: 100% !important;
+					.icon {
+						background-image: url("./../../asset/images/upload.svg");
+						width: 19px;
+						height: 21px;
+						@include img_heart;
+						margin-left: 5px;
+						margin-right: 5px;
+					}
+					.text {
+						font-size: 12.5px;
+						color: #646c7d;
+					}
+				}
+				.uploaded {
+					background: #ecedf0;
+					border: 1.5px solid #ecedf0 !important;
+					padding-left: 6px;
+					padding-right: 6px;
+					.icon1 {
+						background-image: url("./../../asset/images/upload.svg");
+					}
+					.text {
+						margin-right: auto;
+						color: black;
+					}
+					.icon2 {
+						background-image: url("./../../asset/images/delete.svg");
+					}
+				}
+			}
+
+			.bttn {
+				margin-top: 20px;
+				margin-left: auto;
+				width: fit-content;
+				font-size: 12.6px;
+				background: #cfd3da;
+				color: white;
+				padding: 10.5px 17px;
+				border-radius: 100px;
+			}
+			.bttn.active {
+				background: #242936 !important;
+			}
+		}
+	}
+}

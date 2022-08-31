@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "beasite";
+	src: url("./../font/Beausite\ Classic\ Regular.ttf");
+}
+
+@font-face {
+	font-family: "beausite_bold";
+	src: url("./../font/Beausite\ Classic\ Bold.ttf");
+}
+@font-face {
+	font-family: "beausite_medium";
+	src: url("./../font/Beausite\ Classic\ Medium.ttf");
+}
+@font-face {
+	font-family: "robo";
+	src: url("./../font/RobotoMono-Regular.ttf");
+}
+@font-face {
+	font-family: "robo_mid";
+	src: url("./../font/RobotoMono-Medium.ttf");
+}
+@font-face {
+	font-family: "robo_bold";
+	src: url("./../font/Beausite\ Classic\ Bold.ttf");
+}
+
+.robo {
+	font-family: robo;
+}
+
+.robo_mid {
+	font-family: robo_mid;
+}
+.robo_bold {
+	font-family: robo_bold;
+}
+
+.bea1 {
+	font-family: beasite;
+}
+.bea2 {
+	font-family: beausite_bold;
+}
+.bea3 {
+	font-family: beausite_medium;
+}

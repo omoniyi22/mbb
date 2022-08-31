@@ -1,0 +1,38 @@
+//   LAYOUT (NAV)
+@import "./../../layout/layout";
+
+// PAGES
+// PROJECTS
+@import "./../../pages/Projects/pojects";
+@import "./../../pages/Project/projectOverview";
+@import "./../../pages/Form/projectForm";
+@import "./../../pages/Upload/upload";
+@import "./../../pages/Rounds/rounds";
+
+//COMPONENT
+@import "./../../components/component";
+
+// FORM
+@import "./../../pages/Form/projectForm";
+
+.rs-modal-wrapper {
+	max-width: 100% !important;
+	* {
+		max-width: 100% !important;
+	}
+}
+.rs-modal-content {
+	max-height: 40px !important;
+	height: 40px !important;
+	margin-top: calc(42vh - 48px);
+	background: transparent;
+	box-shadow: none;
+	max-width: 100% !important;
+	.rs-modal-content {
+		max-height: 40px;
+		@include heart();
+	}
+	div {
+		@include heart();
+	}
+}

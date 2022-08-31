@@ -1,0 +1,312 @@
+.projectForm {
+	max-width: 1115px;
+	margin-top: 27px;
+	.back {
+		margin-bottom: 10px;
+		width: 60px;
+		height: 30px;
+		@include heart;
+		.icon {
+			background-image: url("./../../asset/images/left_arrow.svg");
+			@include img_heart;
+			width: 17px;
+			height: 17px;
+		}
+	}
+	.real_form {
+		max-width: 488px;
+		.title {
+			font-family: beausite_bold;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+		.error-box {
+			padding-right: 10px;
+			padding-left: 10px;
+			text-align: right;
+			font-size: 12px;
+			color: rgb(241, 41, 41);
+			margin-top: 10px;
+			margin-bottom: 5px;
+			height: 20px;
+		}
+		.form_body {
+			.form_part {
+				margin-bottom: 15px;
+				border-radius: 12px;
+				background: #f9f9fa;
+				padding: 16px 24px 26px 24px;
+				.part1_title {
+					font-size: 15.3px;
+					font-weight: bold;
+					opacity: 0.8;
+				}
+				.form_input {
+					.part2_title {
+						@include heart;
+						justify-content: space-between;
+						margin-top: 11px;
+						.text1 {
+							font-size: 13.4px;
+							// opacity: 0.94;
+							// font-family: beausite_bold;
+						}
+						.text2 {
+							font-size: 13.2px;
+							// font-weight: bold;
+							opacity: 0.9;
+						}
+					}
+					.input {
+						border: 1px solid #dee1e6 !important;
+						border-radius: 8px;
+						width: 100%;
+						margin-top: 6px;
+						font-size: 12.5px;
+						font-weight: bold;
+						padding: 9px 15px;
+						color: rgba(0, 0, 0, 0.733);
+					}
+				}
+			}
+			.part2 {
+				padding: 10px 24px 24px 24px;
+				margin-top: 12px;
+				.text2 {
+					@include heart;
+					.plus {
+						width: 12px;
+						height: 12px;
+						@include img_heart;
+						background-image: url("./../../asset/images/plus.svg");
+					}
+				}
+				.objectives {
+					background: white;
+					border: 1px solid #dee1e6 !important;
+					border-radius: 8px;
+					width: 100%;
+					margin-top: 6px;
+					font-size: 12.5px;
+					font-weight: bold;
+					color: rgba(0, 0, 0, 0.733);
+					overflow: hidden;
+					@include heart;
+					.select {
+						flex: 2;
+						border-right: 1px solid #dee1e6 !important;
+						padding-right: 15px;
+						select {
+							width: 100%;
+							padding: 9px 0px;
+							padding-left: 15px;
+							border: none;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							appearance: none;
+							background: transparent url("./../../asset/images/arrow.svg")
+								no-repeat 100% center;
+						}
+					}
+					.delete_icon {
+						@include heart;
+						width: 60px;
+						height: 10px;
+						.delete_btn {
+							width: 20px;
+							height: 20px;
+							@include img_heart;
+							background-image: url("./../../asset/images/delete.svg");
+						}
+					}
+				}
+			}
+		}
+		.create_field {
+			margin-top: 30px;
+			@include heart;
+			.delete_button {
+				.delete_text {
+					font-size: 13px;
+					font-family: beausite_medium;
+				}
+			}
+			.buttn {
+				margin-left: auto;
+				font-size: 13px;
+				max-width: fit-content;
+				padding: 13px 24px;
+				border-radius: 100px;
+				background: #242936;
+			}
+			.fade_button {
+				background: #ecedf0;
+				color: black;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.projectForm {
+		max-width: 90%;
+		margin-top: 18px;
+		.back {
+			margin-bottom: 15px;
+			// width: 20px;
+			height: 30px;
+			@include heart;
+			.back_text{
+				display: block;
+			}
+			.icon {
+				background-image: url("./../../asset/images/left_arrow.svg");
+				@include img_heart;
+				width: 15px;
+				height: 15px;
+			}
+		}
+		.real_form {
+			max-width: 488px;
+			.title {
+				font-family: beausite_bold;
+				font-weight: bolder;
+				font-size: 18px;
+			}
+			.error-box {
+				padding-right: 10px;
+				padding-left: 10px;
+				text-align: right;
+				font-size: 12px;
+				color: rgb(241, 41, 41);
+				margin-top: 10px;
+				margin-bottom: 5px;
+				height: 20px;
+			}
+			.form_body {
+				.form_part {
+					margin-top: -17px;
+					margin-bottom: 15px;
+					border-radius: 12px;
+					background: #ecedf0c5;
+					padding: 20px 17px 26px 17px;
+					.part1_title {
+						font-size: 14.3px;
+						font-weight: bold;
+						opacity: 0.8;
+					}
+					.form_input {
+						.part2_title {
+							@include heart;
+							justify-content: space-between;
+							margin-top: 15px;
+							.text1 {
+								font-size: 12px;
+								// opacity: 0.94;
+								// font-family: beausite_bold;
+							}
+							.text2 {
+								font-size: 12.2px;
+								// font-weight: bold;
+								opacity: 0.9;
+								span {
+									display: none;
+								}
+							}
+						}
+						.input {
+							border: 1px solid #dee1e6 !important;
+							border-radius: 8px;
+							width: 100%;
+							margin-top: 6px;
+							margin-bottom: 6px;
+							font-size: 12px;
+							font-weight: bold;
+							padding: 12px 12px;
+							color: rgba(0, 0, 0, 0.733);
+						}
+					}
+				}
+				.first_form {
+					padding-bottom: 20px !important;
+				}
+				.part2 {
+					padding: 4px 17px 20px 17px;
+					margin-top: 12px;
+					.text2 {
+						@include heart;
+						.plus {
+							width: 12px;
+							height: 12px;
+							@include img_heart;
+							background-image: url("./../../asset/images/plus.svg");
+						}
+					}
+					.objectives {
+						background: white;
+						border: 1px solid #dee1e6 !important;
+						border-radius: 8px;
+						width: 100%;
+						margin-top: 6px;
+						font-size: 12.5px;
+						font-weight: bold;
+						color: rgba(0, 0, 0, 0.733);
+						overflow: hidden;
+						@include heart;
+						.select {
+							flex: 2;
+							border-right: 1px solid #dee1e6 !important;
+							padding-right: 15px;
+							select {
+								width: 100%;
+								padding: 9px 0px;
+								padding-left: 6px;
+								border: none;
+								-webkit-appearance: none;
+								-moz-appearance: none;
+								appearance: none;
+								background: transparent url("./../../asset/images/arrow.svg")
+									no-repeat 100% center;
+
+								font-size: 10px;
+							}
+						}
+						.delete_icon {
+							@include heart;
+							width: 50px;
+							height: 39px;
+							.delete_btn {
+								width: 18.5px;
+								height: 18.5px;
+								@include img_heart;
+								background-image: url("./../../asset/images/delete.svg");
+							}
+						}
+					}
+				}
+			}
+			.create_field {
+				margin-top: 30px;
+				@include heart;
+				.delete_button {
+					.delete_text {
+						font-size: 13px;
+						font-family: beausite_medium;
+					}
+				}
+				.buttn {
+					margin-left: auto;
+					font-size: 13px;
+					max-width: fit-content;
+					padding: 13px 24px;
+					border-radius: 100px;
+					background: #242936;
+				}
+				.fade_button {
+					background: #ecedf0;
+					color: black;
+				}
+			}
+		}
+	}
+}

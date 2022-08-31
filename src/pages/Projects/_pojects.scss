@@ -1,0 +1,233 @@
+.projects {
+	max-width: 950px;
+	margin-top: 30.6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	.title {
+		justify-content: space-between;
+		.header1 {
+			font-family: beausite_bold;
+			font-weight: bolder;
+			font-size: 21px;
+			color: black;
+		}
+		.bottn {
+			margin-top: 0;
+		}
+	}
+	.projects_box {
+		margin-top: 35px;
+		display: flex;
+		flex-wrap: wrap;
+		// justify-content: space-between;
+		gap: 23px;
+		.project_card {
+			width: 294px;
+			padding: 14px 24px 0px 20px;
+			background: #3b3f49;
+			border-radius: 8px;
+			margin-bottom: 20px;
+			.icon_box {
+				display: flex;
+				justify-content: space-between;
+				.icon {
+					height: 24px;
+					width: 24px;
+					@include img_heart;
+					background-image: url("./../../asset/images/folder.svg");
+				}
+				.icon2 {
+					height: 24.6px !important;
+					width: 24.6px !important;
+					background-image: url("./../../asset/images/three-dots.svg") !important;
+					opacity: 0;
+					transition-duration: 0.3s;
+					background-color: transparent !important;
+					border: none !important;
+					border-radius: 13px;
+					padding: 0px !important;
+				}
+			}
+			&:hover {
+				.icon2 {
+					opacity: 1;
+					border: none;
+					height: 24.6px;
+					width: 24.6px;
+				}
+			}
+			.icon2:focus {
+				opacity: 1 !important;
+				border: none !important;
+			}
+			.project_name {
+				padding-top: 25.2px;
+				color: rgba(255, 255, 255, 0.96);
+				font-weight: lighter;
+				font-size: 14px;
+				letter-spacing: 1px;
+			}
+			.project_time {
+				margin-top: 0px;
+				margin-bottom: 3px;
+				font-size: 15.4px;
+				font-weight: light;
+				padding-bottom: 20px;
+				code {
+					color: rgba(255, 255, 255, 0.463);
+				}
+			}
+		}
+	}
+
+	.bottn {
+		margin-top: 19px;
+		font-size: 12px;
+		padding: 10px 12px;
+		background-color: #242936;
+		color: white;
+		max-width: fit-content;
+		border-radius: 70px;
+	}
+	.body {
+		margin-top: 90px;
+		max-width: fit-content;
+		.img {
+			background-image: url("./../../asset/images/knot.svg");
+			@include img_heart;
+			height: 66px;
+			width: 66px;
+			margin-left: -4px;
+			background-size: 89%;
+		}
+		.title {
+			font-size: 16px;
+			margin-top: 17px;
+			font-family: beausite_bold;
+		}
+		.content {
+			margin-top: 7px;
+			font-size: 12.2px;
+			max-width: 275px;
+			color: #646c7d;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.projects {
+		max-width: 950px;
+		margin-top: 30.6px;
+		padding-left: 10px;
+		padding-right: 10px;
+		.title {
+			justify-content: space-between;
+			.header1 {
+				font-family: beausite_bold;
+				font-weight: bolder;
+				font-size: 21px;
+				color: black;
+			}
+			.bottn {
+				margin-top: 0;
+			}
+		}
+		.projects_box {
+			margin-top: 35px;
+			display: flex;
+			flex-wrap: wrap;
+			// justify-content: space-between;
+			gap: 23px;
+			.project_card {
+				width: 300px;
+				padding: 14px 24px 0px 20px;
+				background: #3b3f49;
+				border-radius: 8px;
+				margin-bottom: -8px;
+				.icon_box {
+					display: flex;
+					justify-content: space-between;
+					.icon {
+						height: 24px;
+						width: 24px;
+						@include img_heart;
+						background-image: url("./../../asset/images/folder.svg");
+					}
+					.icon2 {
+						height: 24.6px !important;
+						width: 24.6px !important;
+						background-image: url("./../../asset/images/three-dots.svg") !important;
+						opacity: 0;
+						transition-duration: 0.3s;
+						background-color: transparent !important;
+						border: none !important;
+						border-radius: 13px;
+						padding: 0px !important;
+					}
+				}
+				&:hover {
+					.icon2 {
+						opacity: 1;
+						border: none;
+						height: 24.6px;
+						width: 24.6px;
+					}
+				}
+				.icon2:focus {
+					opacity: 1 !important;
+					border: none !important;
+				}
+				.project_name {
+					padding-top: 25.2px;
+					color: rgba(255, 255, 255, 0.96);
+					font-weight: lighter;
+					font-size: 14px;
+					letter-spacing: 1px;
+				}
+				.project_time {
+					margin-top: 0px;
+					margin-bottom: 3px;
+					font-size: 15.4px;
+					font-weight: light;
+					padding-bottom: 20px;
+					code {
+						color: rgba(255, 255, 255, 0.463);
+					}
+				}
+			}
+		}
+
+		.bottn {
+			margin-top: 19px;
+			font-size: 12px;
+			padding: 10px 12px;
+			background-color: #242936;
+			color: white;
+			max-width: fit-content;
+			border-radius: 70px;
+		}
+		.body {
+			margin-top: 90px;
+			max-width: fit-content;
+			.img {
+				background-image: url("./../../asset/images/knot.svg");
+				@include img_heart;
+				height: 66px;
+				width: 66px;
+				margin-left: -4px;
+				background-size: 89%;
+			}
+			.title {
+				font-size: 16px;
+				margin-top: 17px;
+				font-family: beausite_bold;
+			}
+			.content {
+				margin-top: 7px;
+				font-size: 12.2px;
+				max-width: 275px;
+				color: #646c7d;
+			}
+		}
+	}
+}
