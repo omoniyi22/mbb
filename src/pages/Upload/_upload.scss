@@ -51,10 +51,16 @@
 			#file-input {
 				display: none;
 			}
+			.fileUploadBox {
+				max-height: 52px !important;
+				margin-top: -8px !important;
+				margin-bottom: 8px !important;
+				
+			}
 			.upload_box {
+				overflow-y: hidden;
 				@include heart;
 				padding: 14px !important;
-				margin-bottom: 5px !important;
 				margin-top: 9px !important;
 				border: 1.5px dashed #cfd3da !important;
 				border-radius: 8px;

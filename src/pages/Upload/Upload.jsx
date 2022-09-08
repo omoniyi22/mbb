@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { AddRoundAction } from "./../../store/actions/project";
+import DownloadLink from "react-download-link";
+import { FileUploader } from "react-drag-drop-files";
 
 class Upload extends Component {
 	constructor(props) {
@@ -16,8 +18,17 @@ class Upload extends Component {
 		this.setFileToBase = this.setFileToBase.bind(this);
 	}
 
-	changeHandler(e) {
-		if (e.target.files) {
+	changeHandler(e, drop) {
+		if (drop === "drop") {
+			console.log("drop");
+
+			this.setState({
+				file: e,
+			});
+			this.setFileToBase(e);
+		} else if (e.target.files) {
+			e.preventDefault();
+			e.stopPropagation();
 			this.setState({
 				file: e.target.files[0],
 			});
@@ -63,12 +74,25 @@ class Upload extends Component {
 					<div className="upload_body ">
 						<div className=" flexIt flex ">
 							<div className="small_title ">Results</div>
-							<div className="small_text  ml-auto">Download template</div>
+							<div className="small_text  ml-auto">
+								<a
+									className="the_link text-black p-0 m-0"
+									href="/TEM1_fitness.csv"
+									download
+								>
+									Download template
+								</a>
+							</div>
 							<div className="small_icon "></div>
 						</div>
 
 						{!(this.state.file && this.state.file.name) ? (
-							<>
+							<FileUploader
+								classes="w-100 m-0 p-0 h-100 fileUploadBox"
+								handleChange={(e) => this.changeHandler(e, "drop")}
+								name="file"
+								types={["CSV"]}
+							>
 								<label for="file-input" className="upload_box pnt">
 									<div className="icon "></div>
 									<div className="text break_1 ">
@@ -79,9 +103,9 @@ class Upload extends Component {
 									id="file-input"
 									type="file"
 									accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
-									onChange={this.changeHandler}
+									onChange={(e) => this.changeHandler(e)}
 								/>
-							</>
+							</FileUploader>
 						) : (
 							<div className="upload_box uploaded">
 								<div className="icon icon1 "></div>

@@ -32,13 +32,17 @@ export class FoldGraph extends SampleBase {
 							valueType: "Category",
 							majorGridLines: { width: 0 },
 							majorTickLines: { width: 0 },
-							lineStyle: { width: 0 },
+							lineStyle: { width: 2 },
 							labelStyle: { color: "transparent" },
 						}}
 						primaryYAxis={{
 							title: "Fitness score",
 							majorGridLines: { width: 0 },
 							majorTickLines: { width: 0 },
+
+							minimum: 0,
+							maximum: 300,
+							interval: 50,
 							lineStyle: { width: 2 },
 						}}
 						chartArea={{ border: { width: 0 } }}

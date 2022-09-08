@@ -279,7 +279,7 @@ export default class Rounds extends Component {
 																					x: "",
 																					y:
 																						this.props.project.result
-																							.parent_sequence * 320,
+																							.parent_sequence * 100,
 																				},
 																			],
 																			[
@@ -288,7 +288,7 @@ export default class Rounds extends Component {
 																					x: "",
 																					y:
 																						this.props.project.result
-																							.best_sequence * 320,
+																							.best_sequence * 100,
 																				},
 																			],
 																	  ]

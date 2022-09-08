@@ -9,11 +9,10 @@ export const extractUniprotIdFromSequence = async (UNIPROT_SEQUCENCE) => {
 		if (data === "|") sliceIndexes.push(index)
 		return null
 	})
-
 	let gottenID = UNIPROT_SEQUCENCE.substring(sliceIndexes[0] + 1, sliceIndexes[1])
-
 	return gottenID
 }
+
 export const vetObjectivities = (objectivity) => {
 	if (objectivity.length > 0) {
 		let result = objectivity.every((data, index) => {
